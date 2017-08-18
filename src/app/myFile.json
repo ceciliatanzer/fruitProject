@@ -1,0 +1,32 @@
+[  
+   {  
+      "name":"Apple",
+      "vitamin":"Vitamin C",
+      "category":"Fruit"
+   },
+   {  
+      "name":"Pear",
+      "vitamin":"Vitamin C",
+      "category":"Fruit"
+   },
+   {  
+      "name":"Banana",
+      "vitamin":"Vitamin C",
+      "category":"Fruit"
+   },
+   {  
+      "name":"Carrot",
+      "vitamin":"Vitamin C",
+      "category":"Vegetable"
+   },
+   {  
+      "name":"Cuke",
+      "vitamin":"Vitamin C",
+      "category":"Vegetable"
+   },
+   {  
+      "name":"Tomato",
+      "vitamin":"Vitamin C",
+      "category":"Vegetable"
+   }
+]

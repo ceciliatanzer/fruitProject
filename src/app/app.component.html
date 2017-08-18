@@ -1,0 +1,27 @@
+<!-- <inputfruit></inputfruit> -->
+<p>Namen: <input class="form-control" type='text' [(ngModel)]='nameFruit'></p>
+<p>Vitamin <input class="form-control" type='text' [(ngModel)]='vitaminFruit'></p>
+<select class="form-control" [(ngModel)]='testVal' placeholder='Fruit'>
+   <option *ngFor="let category of categoryArray" [value]="category">
+   <!-- <option value='Fruit'>Fruit</option>-->
+   <!-- <option value='Vegetable'>Vegetable</option>-->
+     {{category}}
+   </option>
+</select>
+<p><button class='btn-primary' type='button' (click)='appendFruit(category)' >Submit</button></p>
+<select (change)="getFoods()" class="form-control" [(ngModel)]='filterVal' placeholder='Fruit'>
+   <option *ngFor="let category of filterArray" [value]="category">
+   <!-- <option value='Fruit'>Fruit</option>-->
+   <!-- <option value='Vegetable'>Vegetable</option>-->
+     {{category}}
+   </option>
+</select>
+<table class="table table-bordered">
+<thead><tr><th>Name</th><th>Vitamin</th><th>Category</th></tr></thead>
+<tr *ngFor="let foodItem of foodItems">
+         <td>{{foodItem.name}}</td>
+         <td>{{foodItem.vitamin}}</td>
+         <td>{{foodItem.category}}</td>
+         <td><button class='btn-primary' (click)='deleteItem(foodItem)'>Delete</button></td>
+</tr>
+</table>

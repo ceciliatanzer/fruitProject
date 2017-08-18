@@ -1,0 +1,8 @@
+<p>Namen: <input type='text' [(ngModel)]='nameFruit'></p>
+<p>Vitamin <input type='text' [(ngModel)]='vitaminFruit'></p>
+<select [(ngModel)]='testVal'>
+   <option *ngFor="let category of categoryArray" [value]="category">
+     {{category}}
+   </option>
+</select>
+<p><button type='button' (click)='appendFruit(category)' >Submit</button>
